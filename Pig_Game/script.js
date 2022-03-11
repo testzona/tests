@@ -96,7 +96,7 @@ storniraj.addEventListener('click', function(){
             igra = false;
             kocka1.classList.add('hidden');
 
-            document.querySelector('.naslov').textContent = `Pobednik!`;
+            document.getElementById(`naslov--${aktivniIgrac}`).textContent = `Pobednik!`;
 
             document
                 .querySelector(`.igrac--${aktivniIgrac}`)
