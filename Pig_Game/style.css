@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right bottom, #b59461, #ac8c59, #a38451, #9b7c4a, #927442);
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  height: 100vh;
+}
+
+.container {
+  /* width: 90%; */
+  max-width: 90%;
+  height: 500px;
+  display: flex;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #927442;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px 2px rgba(79,69,56,0.75);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(79,69,56,0.75);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(79,69,56,0.75);
+
+  /* border: 1px solid darkgray; */
+}
+
+.igrac {
+  flex: 50%;
+
+
+  /* border: 1px solid brown; */
+}
+
+.naslov {
+  text-transform: uppercase;
+  padding: 30px 0;
+  color: #4F4538;
+}
+.bod1,.bod2 {
+  font-size: 2.9em;
+  color: #9B3310;
+}
+
+.trenutno {
+  position: relative;
+  top: 50%;
+  /* padding: 20px; */
+  padding-top: 10px;
+  width: 7rem;
+  height: 5rem;
+  margin:0 auto;
+  color: #4F4538;
+  border-radius: 20px;
+  background-color: #B59461;
+  /* border: 1px solid yellow; */
+}
+
+.igrac--aktivni {
+    background-color: #B6A999;
+    border-radius:20px;
+}
+
+.igrac--aktivni .trenutno {
+    opacity: 1;
+}
+
+.trbr1, .trbr2 {
+  margin-top: 10px;
+  color: #1A735C;
+  /* border: 1px solid white; */
+}
+
+.dugmad {
+  position: absolute;
+  display: block;
+  flex-direction: column;
+  height: 500px;
+  width: 100px;
+  left: 50%;
+  transform: translate(-50%);
+
+  /* border: 1px solid red; */
+}
+
+.kocka{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 8em;
+
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  border-radius:10px;
+  padding: 5px 5px;
+  background-color: #55A88E;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nova {
+  top: 5em;
+}
+.baci {
+  bottom: 11em;
+  padding: 9px 3px;
+}
+.cekaj {
+  bottom: 8em;
+}
+
+.igrac--pobednik {
+  background-color: #2f2f2f;
+    border-radius: 20px;
+}
+
+.igrac--pobednik .naslov {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
