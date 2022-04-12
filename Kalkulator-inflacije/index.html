@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kalkulator Inflacije</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer type="text/javascript" src="script.js"></script>
+    </head>
+
+<body>
+
+    <h1>Kalkulator inflacije</h1>
+    <div class="container">
+
+        <div class="stopa">
+            <label for="stopa">Stopa inflacije: </label>
+            <input type="number" class="infl" id="postotak">%
+        </div>
+
+        <div class="red">
+            <p>Izracunaj koliko ce <input type="number" class="euro" id="koliko_eura">$ da vredi za <input type="number" class="godina" id="koliko_godina"> godina?</p>
+        </div>
+
+        <button class="dugme" onClick="inflacija()">Izracunaj</button>
+
+        <div class="rezultat">
+
+        </div>
+    </div>
+</body>
+</html>

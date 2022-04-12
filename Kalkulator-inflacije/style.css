@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background: #e0e0e0;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+}
+
+.container {
+    max-width: 450px;
+    height: 300px;
+    margin: 40px auto;
+/*    border: 2px solid red;*/
+/*    border-radius: 10px;*/
+    padding: 20px;
+       border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3em;
+    color: #126A75 ;
+
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+
+}
+
+.container input {
+    width: 50px;
+    padding: 5px;
+}
+
+
+/*remove input number arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+    border: 1px solid #a1a1a1;
+}
+
+.stopa {
+    margin: 20px 10px;
+}
+
+.red {
+    margin: 20px 10px
+}
+
+.dugme {
+    margin: 20px 10px;
+    padding: 5px 20px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    border-radius: 50px;
+    background: #a1a1a1;
+    box-shadow:  20px 20px 60px #898989,
+             -20px -20px 60px #b9b9b9;
+}
+
+.rezultat {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+/*    transition: 2s ease-in;*/
+    color: #126A75;
+    margin: 20px 5px;
+
+}
+
+/*naslov*/
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*rezultat*/
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
