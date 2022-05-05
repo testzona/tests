@@ -21,19 +21,20 @@
 
 html, body {
   width: 100%;
-/*  height:100%;*/
+ height:100%;
 }
 
 body {
     background: linear-gradient(-45deg, #A65E46, #56423C , #BDA69F, #517C42);
     background-size: 400% 400%;
+    background-position: center;
     animation: gradient 15s ease infinite;
 
     font-family: var(--font2);
 }
 
 .container {
-    width: 370px;
+    width: 320px;
     min-height: 200px;
     text-align: center;
     margin: 80px auto;
@@ -74,13 +75,13 @@ input:focus {
 }
 
 button {
-    padding: 7px 10px;
+    padding: 7px 5px;
     margin: 0;
     border: none;
     flex: 1;
     color: var(--buttonColor);
     background-color: var(--buttonBg);
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     border-radius: 0px 5px 5px 0px;
 }
 
