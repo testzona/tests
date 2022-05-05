@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Wendy+One&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    --font1: 'Wendy One', sans-serif;
+    --font2: 'Lato', sans-serif;
+    --bgContainer: #BDA69F;
+    --buttonBg: #85B173;
+    --buttonColor: #D5504D;
+    --h1: #517C42;
+    --zadatakBg: antiquewhite;
+/*    --zadatakBg: #BDA69f ;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+/*  height:100%;*/
+}
+
+body {
+    background: linear-gradient(-45deg, #A65E46, #56423C , #BDA69F, #517C42);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    font-family: var(--font2);
+}
+
+.container {
+    width: 450px;
+    min-height: 200px;
+    text-align: center;
+    margin: 80px auto;
+    background-color: var(--bgContainer);
+    padding: 30px;
+    border-radius: 10px;
+
+/*    border: 1px solid red;*/
+}
+
+h1 {
+    margin: 20px 0;
+    font-family: var(--font1);
+    color: var(--h1);
+}
+
+.polje {
+/*    border: 1px solid black;*/
+    width: 80%;
+    margin: 20px auto 5px auto;
+    display: flex;
+}
+
+input {
+    padding: 5px;
+    margin: 0;
+    border: none;
+    flex: 2;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--zadatakBg);
+    color: var(--buttonBg)
+}
+
+input:focus {
+/*    outline: var(--buttonBg);*/
+    outline: none;
+    border: 2px solid var(--buttonBg)
+}
+
+button {
+    padding: 7px 10px;
+    margin: 0;
+    border: none;
+    flex: 1;
+    color: var(--buttonColor);
+    background-color: var(--buttonBg);
+    letter-spacing: 3px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+button:hover {
+    background-color: #9EC190 ;
+}
+
+li {
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.zadatak {
+/*    text-align: left;*/
+
+    width: 80%;
+    margin: 0 auto 3px auto;
+    padding: 5px 0 5px 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--zadatakBg);
+    color: var(--buttonColor)
+}
+
+.fa-trash-can {
+    color: gray;
+    padding: 0 20px;
+    flex-basis: 10px;
+    margin-left: auto;
+}
+
+.fa-trash-can:hover {
+    color: red;
+}
+
+.fa-circle-check {
+    color: gray;
+    flex-basis: 10px;
+    margin-right: 10px;
+    opacity: 1;
+
+/*    border: 1px solid red;*/
+}
+
+.resenZadatak {
+    color: green;
+    opacity: 1;
+}
+
+.resenaLista {
+    opacity: 0.6;
+    background-color: lightgreen;
+/*    text-decoration: line-through;*/
+/*    color: antiquewhite*/
+    font-weight: 300;
+}
+
+.resenoKanta {
+    color: darkred;
+    opacity: 1;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
