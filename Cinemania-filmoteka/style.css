@@ -1,0 +1,380 @@
+:root {
+    --zuta: #F49D00;
+    --bg1: #282828;
+    --crna1: #262626;
+    --crna2: rgba(38, 38, 38, 0.8);
+    --bg2: #2B2A2A;
+    --crvena: #8B0000;
+    --font1: #D6D6D6;
+    --siva: #616161;
+    --oxfblue: #002147;
+    --airblue: 	#5D8AA8;
+    --dodgerblue: #1E90FF;
+    --burgundi: #800020;
+    --crimson: #E32636;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, arial, helvetica, sans-serif;
+    background-color: var(--bg2);
+}
+
+
+
+/*=====================================================*/
+/*=============== navigacija =========================*/
+nav {
+    display: flex;
+    align-items: center;
+    margin: 25px 90px;
+}
+.nav-veliki {
+    opacity: 1;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+li {
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+li a {
+    text-decoration: none;
+    color: var(--siva);
+}
+li a:hover {
+    color: var(--airblue)
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+.logo a {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: var(--airblue);
+}
+.m, .a {
+    color: var(--siva);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    margin-left: auto;
+}
+.bar {
+    display: block;
+    width: 35px;
+    height: 1px;
+    margin: 7px auto;
+    background-color: var(--siva);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*============== hover nav links =====================*/
+li a{
+    position: relative;
+}
+li a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--airblue);
+    left: 10%;
+    bottom: -10%;
+    transition: all 0.3s ease-in-out;
+}
+li a:hover{
+    cursor: pointer;
+}
+li a:hover::after{
+    cursor: pointer;
+    width: 100%;
+    left: 0;
+}
+/*====================================================*/
+/*====================================================*/
+
+
+.item {
+    margin-bottom: 35px;
+}
+.item:hover{
+    cursor: pointer;
+}
+
+.naslovi {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 0 8px;
+
+    /*border: 1px solid black;*/
+}
+
+h1 {
+    color: var(--siva);
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.ime-filma {
+    color: var(--font1);
+    font-size: 0.8em;
+}
+.god-filma {
+    color: var(--siva);
+    font-size: 0.7em;
+}
+
+
+img {
+    /*width: 100px;*/
+    width: 100%;
+    /*height: 100%;*/
+}
+
+
+
+
+
+
+/*=================================================================*/
+/*==== stranica filma info ========================================*/
+
+
+.stranica-filma {
+    /*border: 1px solid black;*/
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    max-width: 500px;
+    min-height: 90%;
+    background-color: var(--bg2);
+    margin-bottom: 50px;
+
+    animation-name: otvaranje;
+    animation-duration: 0.7s;
+}
+
+.thumbinail {
+    width: 100px;
+}
+.imdbS {
+    width: 25px;
+}
+.film-info {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 20px;
+
+}
+
+.slika-pozadina {
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid red;*/
+    position: absolute;
+
+    background-image: linear-gradient(to bottom, transparent  ,
+    var(--bg2) 90% ), url('img/The Godfather-bg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--bg2);
+}
+
+.thum-naziv {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.thum-naziv h3 {
+    color: var(--font1);
+    font-size: 1rem;
+}
+.thum-god-vreme {
+    color: var(--siva);
+    margin-top: 8px;
+    font-size: 0.8rem;
+}
+
+.imdb-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    color: var(--siva);
+    font-size: 0.8rem;
+}
+
+.reprodukcija {
+    margin: 15px 20px;
+}
+.gledaj {
+    width: 100px;
+    padding: 4px 0;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--zuta);
+    letter-spacing: 1px;
+}
+.gledaj a{
+    text-decoration: none;
+    color: black;
+}
+.fa-play {
+    margin-right: 10px;
+}
+.preuzmi {
+    padding: 4px;
+    border-radius: 5px;
+    width: 40px;
+    border: none;
+    margin-left: 20px;
+    background-color: var(--airblue);
+
+}
+
+.sadrzaj-str {
+    padding: 10px 20px;
+    color: var(--siva);
+}
+
+.fa-left-long {
+    position: relative;
+    /*color: var(--siva);*/
+    color: var(--font1);
+    top: 30px;
+    left: 30px;
+    /*border: 1px solid red;*/
+}
+.fa-left-long:hover {
+    cursor: pointer;
+}
+
+.dugme-nazad {
+    margin: 40px 20px;
+    padding: 2px 10px;
+    background-color: var(--siva);
+    border: none;
+    border-radius: 5px;
+}
+.dugme-nazad:hover{
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /*z-index: 100;*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+.sakriveno {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: var(--crna1);
+    padding: 10px;
+    color: var(--siva);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@keyframes otvaranje{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+
+@media (max-width: 700px) {
+    /*=============== navigacija =========================*/
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg)
+    }
+    .nav-veliki{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: var(--crna1);
+        padding: 30px 0;
+
+    }
+    .nav-veliki.active {
+        left: 0;
+
+    }
+    nav {
+        margin: 25px;
+    }
+    .logo{
+        font-size: 0.9em;
+    }
+
+    .naslovi {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+}
+/*===============================================*/
