@@ -69,30 +69,30 @@ function infoFilma(element) {
 
 
 
-    // if(gledajFilm.href === "file:///C:/Users/andre/github/tests/Cinemania-filmoteka/nema") {
-    //   gledaj2.style.color = 'red';
-    // } else {
-    //   gledaj2.style.color = 'black';
-    // }
-    //
-    // if(skini1.href === "file:///C:/Users/andre/github/tests/Cinemania-filmoteka/nema") {
-    //   skini2.style.color = 'red';
-    // } else {
-    //   skini2.style.color = 'blue';
-    // }
-
-
-    if(gledajFilm.href === "nema") {
+    if(gledajFilm.href === "https://testzona.github.io/tests/Cinemania-filmoteka/nema") {
       gledaj2.style.color = 'red';
     } else {
       gledaj2.style.color = 'black';
     }
 
-    if(skini1.href === "nema") {
+    if(skini1.href === "https://testzona.github.io/tests/Cinemania-filmoteka/nema") {
       skini2.style.color = 'red';
     } else {
       skini2.style.color = 'blue';
     }
+
+
+    // if(gledajFilm.href === "nema") {
+    //   gledaj2.style.color = 'red';
+    // } else {
+    //   gledaj2.style.color = 'black';
+    // }
+    //
+    // if(skini1.href === "nema") {
+    //   skini2.style.color = 'red';
+    // } else {
+    //   skini2.style.color = 'blue';
+    // }
 
 
 
